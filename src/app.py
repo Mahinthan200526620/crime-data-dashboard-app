@@ -7,7 +7,7 @@ import pandas as pd
 import dash_bootstrap_components as dbc
 
 # read in data
-data = pd.read_csv("/Users/mahinthankugendiran/Desktop/CrimeBahaviourProject/crime_behavior_app/src/clean_crime_canada_dataset.csv")
+data = pd.read_csv("clean_crime_canada_dataset.csv")
 data["year"] = data["year"].astype(int)
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
